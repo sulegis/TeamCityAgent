@@ -5,7 +5,7 @@ ENV AGENT_DIR  /opt/buildAgent
 #supermap libs
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
-		lxc iptables aufs-tools ca-certificates curl wget software-properties-common language-pack-en \
+		lxc iptables aufs-tools ca-certificates curl wget unzip software-properties-common language-pack-en \
 	&& apt-get install -y libx11-dev xinit gcc libgomp1 libxtst6 libxi6 libc6-i386 language-pack-zh-hans \
 	&& rm -rf /var/lib/apt/lists/*
 
