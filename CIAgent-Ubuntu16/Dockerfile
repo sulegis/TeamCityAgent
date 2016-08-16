@@ -3,7 +3,6 @@ FROM ubuntu:16.04
 ENV AGENT_DIR  /opt/buildAgent
 
 #supermap libs
-ADD sources.list /etc/apt/sources.list
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
 		lxc iptables aufs-tools ca-certificates curl wget software-properties-common language-pack-en \
