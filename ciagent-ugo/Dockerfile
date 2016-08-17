@@ -9,3 +9,7 @@ RUN cd /tmp && wget -O SMO.tar.gz ftp://ftp.ispeco.com/ugo/Linux64/SMO_Java_810_
 
 RUN cd /tmp && wget -O aksusbd.tar ftp://ftp.ispeco.com/PackageSrc/aksusbd_2.4.1-i386.tar \
 	&& tar -xvf aksusbd.tar && mv ./aksusbd-* /opt/aksusbd
+
+#replace entrypoint
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
