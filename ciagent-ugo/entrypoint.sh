@@ -28,7 +28,7 @@ if [ ! -d "$AGENT_DIR/bin" ]; then
 fi
 
 echo "Installing SuperMap LicenseDriver..."
-cd /etc/icloud/aksusbd
+cd /opt/aksusbd
 ./dunst
 ./dinst
 
